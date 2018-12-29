@@ -1,0 +1,323 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 288 416)
+	(text "emc_fpga_mcu" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst" (rect 8 384 20 396)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_100M" (rect 0 0 37 12)(font "Arial" ))
+		(text "clk_100M" (rect 21 27 58 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "n_rst" (rect 0 0 21 12)(font "Arial" ))
+		(text "n_rst" (rect 21 43 42 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "spi_ncs" (rect 0 0 30 12)(font "Arial" ))
+		(text "spi_ncs" (rect 21 59 51 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "spi_clk" (rect 0 0 27 12)(font "Arial" ))
+		(text "spi_clk" (rect 21 75 48 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "spi_mosi" (rect 0 0 35 12)(font "Arial" ))
+		(text "spi_mosi" (rect 21 91 56 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "XECDValue[31..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "XECDValue[31..0]" (rect 21 107 95 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "YECDValue[31..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "YECDValue[31..0]" (rect 21 123 96 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "AECDValue[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "AECDValue[31..0]" (rect 21 139 97 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "BECDValue[31..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "BECDValue[31..0]" (rect 21 155 95 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "XCAPValue[31..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "XCAPValue[31..0]" (rect 21 171 95 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "YCAPValue[31..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "YCAPValue[31..0]" (rect 21 187 96 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "ACAPValue[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "ACAPValue[31..0]" (rect 21 203 97 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "BCAPValue[31..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "BCAPValue[31..0]" (rect 21 219 95 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "capok[3..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "capok[3..0]" (rect 21 235 64 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "MECDValue[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "MECDValue[31..0]" (rect 21 251 97 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "MCAPValue[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "MCAPValue[31..0]" (rect 21 267 97 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "Mcapok" (rect 0 0 31 12)(font "Arial" ))
+		(text "Mcapok" (rect 21 283 52 295)(font "Arial" ))
+		(line (pt 0 288)(pt 16 288)(line_width 1))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "F_Alarm[3..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "F_Alarm[3..0]" (rect 21 299 78 311)(font "Arial" ))
+		(line (pt 0 304)(pt 16 304)(line_width 3))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "F_Home[3..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "F_Home[3..0]" (rect 21 315 77 327)(font "Arial" ))
+		(line (pt 0 320)(pt 16 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "F_LimitPN[7..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "F_LimitPN[7..0]" (rect 21 331 84 343)(font "Arial" ))
+		(line (pt 0 336)(pt 16 336)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "F_IO_Input[15..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "F_IO_Input[15..0]" (rect 21 347 90 359)(font "Arial" ))
+		(line (pt 0 352)(pt 16 352)(line_width 3))
+	)
+	(port
+		(pt 272 32)
+		(output)
+		(text "spi_miso" (rect 0 0 35 12)(font "Arial" ))
+		(text "spi_miso" (rect 216 27 251 39)(font "Arial" ))
+		(line (pt 272 32)(pt 256 32)(line_width 1))
+	)
+	(port
+		(pt 272 48)
+		(output)
+		(text "F_IO_Output[15..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "F_IO_Output[15..0]" (rect 175 43 251 55)(font "Arial" ))
+		(line (pt 272 48)(pt 256 48)(line_width 3))
+	)
+	(port
+		(pt 272 64)
+		(output)
+		(text "F_IO_RSEN[15..0]" (rect 0 0 79 12)(font "Arial" ))
+		(text "F_IO_RSEN[15..0]" (rect 172 59 251 71)(font "Arial" ))
+		(line (pt 272 64)(pt 256 64)(line_width 3))
+	)
+	(port
+		(pt 272 80)
+		(output)
+		(text "XPluse[15..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "XPluse[15..0]" (rect 201 75 251 87)(font "Arial" ))
+		(line (pt 272 80)(pt 256 80)(line_width 3))
+	)
+	(port
+		(pt 272 96)
+		(output)
+		(text "YPluse[15..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "YPluse[15..0]" (rect 200 91 251 103)(font "Arial" ))
+		(line (pt 272 96)(pt 256 96)(line_width 3))
+	)
+	(port
+		(pt 272 112)
+		(output)
+		(text "APluse[15..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "APluse[15..0]" (rect 198 107 251 119)(font "Arial" ))
+		(line (pt 272 112)(pt 256 112)(line_width 3))
+	)
+	(port
+		(pt 272 128)
+		(output)
+		(text "BPluse[15..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "BPluse[15..0]" (rect 201 123 251 135)(font "Arial" ))
+		(line (pt 272 128)(pt 256 128)(line_width 3))
+	)
+	(port
+		(pt 272 144)
+		(output)
+		(text "readyFlag" (rect 0 0 40 12)(font "Arial" ))
+		(text "readyFlag" (rect 211 139 251 151)(font "Arial" ))
+		(line (pt 272 144)(pt 256 144)(line_width 1))
+	)
+	(port
+		(pt 272 160)
+		(output)
+		(text "capen[3..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "capen[3..0]" (rect 208 155 251 167)(font "Arial" ))
+		(line (pt 272 160)(pt 256 160)(line_width 3))
+	)
+	(port
+		(pt 272 176)
+		(output)
+		(text "ecdrst[3..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "ecdrst[3..0]" (rect 207 171 251 183)(font "Arial" ))
+		(line (pt 272 176)(pt 256 176)(line_width 3))
+	)
+	(port
+		(pt 272 192)
+		(output)
+		(text "XECDRSTValue[31..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "XECDRSTValue[31..0]" (rect 157 187 251 199)(font "Arial" ))
+		(line (pt 272 192)(pt 256 192)(line_width 3))
+	)
+	(port
+		(pt 272 208)
+		(output)
+		(text "YECDRSTValue[31..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "YECDRSTValue[31..0]" (rect 156 203 251 215)(font "Arial" ))
+		(line (pt 272 208)(pt 256 208)(line_width 3))
+	)
+	(port
+		(pt 272 224)
+		(output)
+		(text "AECDRSTValue[31..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "AECDRSTValue[31..0]" (rect 155 219 251 231)(font "Arial" ))
+		(line (pt 272 224)(pt 256 224)(line_width 3))
+	)
+	(port
+		(pt 272 240)
+		(output)
+		(text "BECDRSTValue[31..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "BECDRSTValue[31..0]" (rect 157 235 251 247)(font "Arial" ))
+		(line (pt 272 240)(pt 256 240)(line_width 3))
+	)
+	(port
+		(pt 272 256)
+		(output)
+		(text "Mcapen[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "Mcapen[3..0]" (rect 200 251 251 263)(font "Arial" ))
+		(line (pt 272 256)(pt 256 256)(line_width 3))
+	)
+	(port
+		(pt 272 272)
+		(output)
+		(text "Mecdrst[3..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "Mecdrst[3..0]" (rect 198 267 251 279)(font "Arial" ))
+		(line (pt 272 272)(pt 256 272)(line_width 3))
+	)
+	(port
+		(pt 272 288)
+		(output)
+		(text "MECDRSTValue[31..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "MECDRSTValue[31..0]" (rect 155 283 251 295)(font "Arial" ))
+		(line (pt 272 288)(pt 256 288)(line_width 3))
+	)
+	(port
+		(pt 272 304)
+		(output)
+		(text "FPGAframeData[7..0]" (rect 0 0 90 12)(font "Arial" ))
+		(text "FPGAframeData[7..0]" (rect 161 299 251 311)(font "Arial" ))
+		(line (pt 272 304)(pt 256 304)(line_width 3))
+	)
+	(port
+		(pt 272 320)
+		(output)
+		(text "syncStateM[3..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "syncStateM[3..0]" (rect 183 315 251 327)(font "Arial" ))
+		(line (pt 272 320)(pt 256 320)(line_width 3))
+	)
+	(port
+		(pt 272 336)
+		(output)
+		(text "spiCnt[7..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "spiCnt[7..0]" (rect 207 331 251 343)(font "Arial" ))
+		(line (pt 272 336)(pt 256 336)(line_width 3))
+	)
+	(port
+		(pt 272 352)
+		(output)
+		(text "errFlag" (rect 0 0 28 12)(font "Arial" ))
+		(text "errFlag" (rect 223 347 251 359)(font "Arial" ))
+		(line (pt 272 352)(pt 256 352)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 256 384)(line_width 1))
+	)
+)

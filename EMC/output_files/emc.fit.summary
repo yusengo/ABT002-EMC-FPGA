@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Dec 26 20:58:53 2018
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : emc
+Top-level Entity Name : emc
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 2,471 / 6,272 ( 39 % )
+    Total combinational functions : 1,358 / 6,272 ( 22 % )
+    Dedicated logic registers : 2,038 / 6,272 ( 32 % )
+Total registers : 2038
+Total pins : 84 / 92 ( 91 % )
+Total virtual pins : 0
+Total memory bits : 229,376 / 276,480 ( 83 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

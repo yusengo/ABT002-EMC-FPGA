@@ -1,0 +1,3 @@
+module emc_fpga_mcu();
+
+endmodule

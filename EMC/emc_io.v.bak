@@ -1,0 +1,1 @@
+module EMC_IO(input clk_100M,input n_rst,input [7:0] limitPN,input [15:0] exInput,output reg[15:0] exOutput)

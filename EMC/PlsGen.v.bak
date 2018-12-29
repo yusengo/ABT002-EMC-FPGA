@@ -1,0 +1,1 @@
+module PlsGen(input clk_100M,input n_rst,output reg Xpls);

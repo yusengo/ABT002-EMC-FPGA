@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Sun Dec 02 13:23:19 2018
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : emc
+Top-level Entity Name : emc
+Family : Cyclone IV E
+Total logic elements : 2,495
+    Total combinational functions : 1,300
+    Dedicated logic registers : 1,787
+Total registers : 1787
+Total pins : 84
+Total virtual pins : 0
+Total memory bits : 131,072
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

@@ -1,0 +1,27 @@
+
+State Machine - |emc|PlsGen:inst1|JHAcc:jhaccB|StateMP
+Name StateMP.01 
+StateMP.00 0 
+StateMP.01 1 
+
+State Machine - |emc|PlsGen:inst1|JHAcc:jhaccA|StateMP
+Name StateMP.01 
+StateMP.00 0 
+StateMP.01 1 
+
+State Machine - |emc|PlsGen:inst1|JHAcc:jhaccY|StateMP
+Name StateMP.01 
+StateMP.00 0 
+StateMP.01 1 
+
+State Machine - |emc|PlsGen:inst1|JHAcc:jhaccX|StateMP
+Name StateMP.01 
+StateMP.00 0 
+StateMP.01 1 
+
+State Machine - |emc|emc_fpga_mcu:inst3|frameGotted
+Name frameGotted.11 frameGotted.10 frameGotted.01 frameGotted.00 
+frameGotted.00 0 0 0 0 
+frameGotted.01 0 0 1 1 
+frameGotted.10 0 1 0 1 
+frameGotted.11 1 0 0 1 

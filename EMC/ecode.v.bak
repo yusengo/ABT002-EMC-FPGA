@@ -1,0 +1,154 @@
+module ecode(A,B,C,edata,eCapData,bCap,CapSt,rst,rstVal,clk);//A������(in)��B������(in)��C������(in)��������ֵ(out)���������ֵ(out)�����񿪹�(in)���Ƿ񲶻���(out)����λ(in)����λֵ(in)��ͬ��ʱ��(in)
+input A;
+input B;
+input C;
+output [31:0] edata;
+output [31:0] eCapData;
+input rst;
+input bCap;
+output CapSt;
+input [31:0] rstVal;
+input clk;
+
+reg cPre;
+
+reg CapStReg;
+assign CapSt=CapStReg;
+reg [31:0] eCapDataReg;
+assign eCapData=eCapDataReg;
+reg [31:0] edata_reg;
+assign edata=edata_reg;
+
+reg [2:0] state;
+parameter 	one_one=2'b11,
+				one_zero=2'b10,
+				zero_one=2'b01,
+				zero_zero=2'b00;
+initial
+begin
+	edata_reg<=32'd0;
+end
+always@(posedge clk)
+begin
+	if(!rst)
+		begin
+			CapStReg<=1'b0;
+			edata_reg<=rstVal;
+			if(A&B)
+				state<=one_one;
+			else if(A&~B)
+				state<=one_zero;
+			else if(~A&B)
+				state<=zero_one;
+			else
+				state<=zero_zero;
+		end
+	else
+		begin
+			cPre<=C;
+			if(bCap)
+				begin
+					if(cPre==1'b0&&C==1'b1)//posivie edge capture
+						begin
+							CapStReg<=1'b1;
+							eCapDataReg<=edata_reg;
+						end
+				end
+			else
+				begin
+					CapStReg<=1'b0;
+				end
+			case(state)
+				one_one:
+					begin
+						if(A&~B)
+							begin
+								state<=one_zero;
+								edata_reg<=edata_reg-32'd1;
+							end
+						else if(~A&B)
+							begin
+								state<=zero_one;
+								edata_reg<=edata_reg+32'd1;
+							end
+						else if(~A&~B)
+							begin
+								state<=zero_zero;
+							end
+						else
+							begin
+								state<=one_one;
+								edata_reg<=edata_reg;
+							end
+					end
+				one_zero:
+					begin
+						if(~A&~B)
+							begin
+								state<=zero_zero;
+								edata_reg<=edata_reg-32'd1;
+							end
+						else if(A&B)
+							begin
+								state<=one_one;
+								edata_reg<=edata_reg+32'd1;
+							end
+						else if(~A&B)
+							begin
+								state<=zero_one;
+							end
+						else
+							begin
+								state<=one_zero;
+								edata_reg<=edata_reg;
+							end
+					end
+				zero_one:
+					begin
+						if(A&B)
+							begin
+								state<=one_one;
+								edata_reg<=edata_reg-32'd1;
+							end
+						else if(~A&~B)
+							begin
+								state<=zero_zero;
+								edata_reg<=edata_reg+32'd1;
+							end
+						else if(A&~B)
+							begin
+								state<=one_zero;
+							end
+						else
+							begin
+								state<=zero_one;
+								edata_reg<=edata_reg;
+							end
+					end
+				zero_zero:
+					begin
+						if(~A&B)
+							begin
+								state<=zero_one;
+								edata_reg<=edata_reg-32'd1;
+							end
+						else if(A&~B)
+							begin
+								state<=one_zero;
+								edata_reg<=edata_reg+32'd1;
+							end
+						else if(A&B)
+							begin
+								state<=one_one;
+							end
+						else
+							begin
+								state<=zero_zero;
+								edata_reg<=edata_reg;
+							end
+					end
+			endcase
+		end
+end
+
+endmodule
